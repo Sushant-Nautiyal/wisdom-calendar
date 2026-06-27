@@ -123,7 +123,7 @@ export default function App() {
   useEffect(() => {
     async function loadMessages() {
       try {
-        const response = await fetch("/data/messages.json");
+        const response = await fetch("./public/data/messages.json");
 
         if (!response.ok) {
           throw new Error(`Failed to load messages.json. Status: ${response.status}`);
